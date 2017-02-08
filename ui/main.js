@@ -1,10 +1,16 @@
 console.log('Loaded!');
 //change the text of main text
 
-var element = document.getElementById('main-text');
-
-element.innerHtml = 'New Value';
-var img=document.getElementById('madi');
-img.onclick =function(){
-    img.style.marginLeft='180px';
-}
+var button= document.getElementById('counter');
+var counter =0;
+button.onclick =function() {
+    
+    
+    
+    
+    
+  counter=counter+1;
+  var span=document.getElementById('count');
+  span.innerHtml=counter.toString();
+    
+};
