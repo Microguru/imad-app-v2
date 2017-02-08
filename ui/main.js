@@ -11,9 +11,13 @@ button.onclick =function() {
     request.onreadystatechange= function(){
         if(request.readyState === XMLHttpRequest.DONE){
              if(request.readystatus===200){
-                 var counter =request.responseText;
-                 var span =document.getElementById('count');
-                 span.innerHtml=counter.toString();
+                 var names= ['name1','name2','name3'];
+    var list="";
+    for(var i=0;i<names.lenght;i++){
+        list +='<li>'+name[i]+'<li>'
+;    }
+    var ul=document.getElementById('namelist');
+    ul.innerHtml= list;
              }
         }
     };
