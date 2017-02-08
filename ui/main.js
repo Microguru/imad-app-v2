@@ -6,12 +6,20 @@ var button= document.getElementById('counter');
 button.onclick =function() {
     
    var request=new XMLhttpRequest();
-    
-    
+    request.onreadystatechange= function(){
+        if(request.readyState === XMLHttpRequest.DONE){
+             if(request.readystatus===200){
+    var counter=request.responseText;
+    var span=document.getElementById('count');
+    span.innerHtml =counter.toString();
    
     
 
-    
+         }  
+         }
+};
+request.open('GET','http://microguru.imad.hasura-app.io/submit-name?name=' +name , true);
+  request.send(null);
 };
 //sumit
 
