@@ -20,11 +20,12 @@ var articles = {
              </p> `
     
 },
-'articletwo':{
+'article-two':{
      title:'Article-Two',
     heading:'Article Two',
     date: '7 FEb 2017',
-    content:`<p>
+    content: 
+    `<p>
     This the content of my second article 
     
     </p>`
