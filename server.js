@@ -109,7 +109,7 @@ app.get('/ui/DSC_0175.JPG', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'DSC_0175.JPG'));
 });
 
-var name=[];
+var names=[];
 app.get('/submit-name/:name' ,function(req,res){
     
     var name =req.params.name;
