@@ -13,4 +13,5 @@ span.innerHtml =counter.toString();
     
     
 };
+alert('check');
 
