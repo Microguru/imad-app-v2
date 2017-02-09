@@ -90,13 +90,7 @@ app.get('/counter', function (req, res) {
     counter =counter+1;
     res.send(counter.toString());
 });
-var name=[];
-app.get('/submit-name',function(req,res){
-    
-    var name =req.param.name;
-    names.push(name);
-    res.send(JSON.stringify(names));
-});
+
 app.get('/:articleName',function(req,res)  {
     //articleName=articleOne
     var articleName= req.params.articleName;
