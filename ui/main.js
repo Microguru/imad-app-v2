@@ -14,4 +14,5 @@ span.innerHtml =counter.toString();
     
 };
 alert('check');
-
+var ft= document.getElementById('ff');
+ft.innerHTML='new value';
